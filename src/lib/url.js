@@ -29,7 +29,7 @@ export function changeURL(title, alt) {
 
         if(window.location.href.split('/')[3] !== `${newUrl}` ){   
             // Update the URL using window.location.href
-            window.location.href = `/${newUrl}`
+            window.location.href = `${newUrl}`
         }
         else{
             navOpenVal.update(()=>{

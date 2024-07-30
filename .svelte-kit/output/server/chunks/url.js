@@ -13,7 +13,7 @@ function changeURL(title, alt) {
   } else {
     let newUrl = title.replaceAll(" ", "-");
     if (window.location.href.split("/")[3] !== `${newUrl}`) {
-      window.location.href = `/${newUrl}`;
+      window.location.href = `${newUrl}`;
     } else {
       navOpenVal.update(() => {
         return false;
