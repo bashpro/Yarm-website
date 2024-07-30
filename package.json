@@ -11,7 +11,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"deploy": "npm run build && npx gh-pages -d yarm -t true"
+		"deploy": "npm run build && node deploy.cjs"
 	},
 	"devDependencies": {
 		"@skeletonlabs/skeleton": "^2.1.0",
@@ -36,6 +36,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"pug": "^3.0.2"
+		"fs-extra": "^11.2.0",
+		"pug": "^3.0.2",
+		"shelljs": "^0.8.5",
+		"simple-git": "^3.25.0"
 	}
 }
