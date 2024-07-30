@@ -140,7 +140,7 @@ newNavMenu([
         parent: "n-top",
         hideText: true,
         func:()=>{
-            changeURL('')
+            changeURL('Yarm-website')
         }
     },
     {
