@@ -1,0 +1,21 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/contact-us": [
+		"src/routes/+layout.js"
+	],
+	"/meet-the-team": [
+		"src/routes/+layout.js"
+	],
+	"/our-approach": [
+		"src/routes/+layout.js"
+	],
+	"/our-classes": [
+		"src/routes/+layout.js"
+	],
+	"/time-table": [
+		"src/routes/+layout.js"
+	]
+}
