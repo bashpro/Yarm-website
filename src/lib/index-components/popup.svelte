@@ -80,7 +80,7 @@
 
 {#if popupActive}
     <div id="popup" class=" top-0 left-0 w-full h-[100svh] fixed z-50 bg-opacity-40 bg-zinc-900 flex flex-col justify-center items-center opacity-0 {popupActive ? "transition-all duration-200 opacity-100": ""} ">
-        <div class=" w-[80vw] sm:h-[40svh] h-[70svh] bg-zinc-200 ">
+        <div class=" w-[80vw] sm:h-[50svh] h-[70svh] bg-zinc-200 ">
             <div class="flex h-[50px] items-center justify-end">
                 <button on:click={()=>{ closePopup() }} class="w-[50px] flex justify-center items-center">
                     <p class=" text-2xl">x</p>

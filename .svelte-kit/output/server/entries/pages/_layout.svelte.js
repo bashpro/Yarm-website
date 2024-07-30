@@ -153,7 +153,7 @@ const Popup = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${popupActive ? `<div id="popup" class="${"top-0 left-0 w-full h-[100svh] fixed z-50 bg-opacity-40 bg-zinc-900 flex flex-col justify-center items-center opacity-0 " + escape(
     popupActive ? "transition-all duration-200 opacity-100" : "",
     true
-  )}"><div class="w-[80vw] sm:h-[40svh] h-[70svh] bg-zinc-200 "><div class="flex h-[50px] items-center justify-end"><button class="w-[50px] flex justify-center items-center" data-svelte-h="svelte-3gxgrw"><p class="text-2xl">x</p></button></div> ${validate_component(FormTemplate, "FormTemplate").$$render(
+  )}"><div class="w-[80vw] sm:h-[50svh] h-[70svh] bg-zinc-200 "><div class="flex h-[50px] items-center justify-end"><button class="w-[50px] flex justify-center items-center" data-svelte-h="svelte-3gxgrw"><p class="text-2xl">x</p></button></div> ${validate_component(FormTemplate, "FormTemplate").$$render(
     $$result,
     {
       title: "Ready to book your first session on us?",
