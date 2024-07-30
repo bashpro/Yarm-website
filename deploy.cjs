@@ -1,10 +1,11 @@
 const shell = require('shelljs');
 const fs = require('fs-extra');
 const path = require('path');
+const os = require('os');
 const simpleGit = require('simple-git');
 
 const buildDir = path.join(__dirname, 'yarm');
-const tempDir = path.join(__dirname, 'temp-build');
+const tempDir = path.join(os.tmpdir(), 'temp-build');
 const git = simpleGit();
 
 async function deploy() {
@@ -20,7 +21,7 @@ async function deploy() {
 
     // Commit changes in the main branch
     await git.add('.');
-    await git.commit('Prepare for deployment');
+    await git.commit('Prepare for deployment', { '--allow-empty': true });
 
     // Checkout the gh-pages branch
     await git.checkout('gh-pages');
@@ -35,9 +36,6 @@ async function deploy() {
     // Copy all files from the temp directory to the current directory
     fs.copySync(tempDir, '.');
 
-    // Clean up the temp directory
-    fs.removeSync(tempDir);
-
     // Add all files to git
     await git.add('.');
 
@@ -51,6 +49,9 @@ async function deploy() {
   } catch (err) {
     console.error('Deployment failed:', err);
   } finally {
+    // Clean up the temp directory
+    fs.removeSync(tempDir);
+
     // Checkout back to the main branch
     await git.checkout('main');
   }
