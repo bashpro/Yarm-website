@@ -9,10 +9,6 @@ const git = simpleGit();
 
 async function deploy() {
   try {
-    // Ensure all changes in the main branch are committed
-    await git.add('.');
-    await git.commit('Committing changes before deploying', { '--allow-empty': true });
-
     // Clean up the temp directory
     if (fs.existsSync(tempDir)) {
       fs.removeSync(tempDir);
@@ -21,6 +17,10 @@ async function deploy() {
 
     // Copy all files from build/yarm to temp directory
     fs.copySync(buildDir, tempDir);
+
+    // Commit changes in the main branch
+    await git.add('.');
+    await git.commit('Prepare for deployment');
 
     // Checkout the gh-pages branch
     await git.checkout('gh-pages');
