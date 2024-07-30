@@ -1,1 +1,0 @@
-import{n as l,m as o}from"./store.2fc47c2f.js";l.subscribe(e=>{});o.subscribe(e=>{});function r(e,i){if(i)window.open(`${i}`,"_blank");else{let n=e.replaceAll(" ","-");window.location.href.split("/")[3]!==`${n}`?window.location.href=`Yarm-website/${n}`:l.update(()=>!1)}}export{r as c};
