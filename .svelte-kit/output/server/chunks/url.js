@@ -11,6 +11,10 @@ function changeURL(title, alt) {
       // <- This is what makes it open in a new window.
     );
   } else {
+    if (title == "") {
+      window.location.href = "https://bashpro.github.io/Yarm-website/";
+      return;
+    }
     let newUrl = title.replaceAll(" ", "-");
     if (window.location.href.split("/")[3] !== `${newUrl}`) {
       window.location.href = `${newUrl}`;

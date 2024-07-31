@@ -52,7 +52,7 @@ const Navigation = create_ssr_component(($$result, $$props, $$bindings, slots) =
       parent: "n-top",
       hideText: true,
       func: () => {
-        changeURL("Yarm-website");
+        changeURL("");
       }
     },
     {

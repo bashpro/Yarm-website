@@ -24,6 +24,10 @@ export function changeURL(title, alt) {
         )
     }
     else{
+        if(title == ''){
+            window.location.href = 'https://bashpro.github.io/Yarm-website/'
+            return
+        }
         // Modify the title to create the new URL
         let newUrl = title.replaceAll(' ', '-');
 
