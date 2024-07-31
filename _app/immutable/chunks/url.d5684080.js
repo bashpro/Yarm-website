@@ -1,0 +1,1 @@
+import{n,m as r}from"./store.2fc47c2f.js";n.subscribe(e=>{});r.subscribe(e=>{});function l(e,i){if(i)window.open(`${i}`,"_blank");else{if(e==""){window.location.href="https://bashpro.github.io/Yarm-website/";return}let o=e.replaceAll(" ","-");window.location.href.split("/")[3]!==`${o}`?window.location.href=`${o}`:n.update(()=>!1)}}export{l as c};
