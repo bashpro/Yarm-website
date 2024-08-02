@@ -14,7 +14,9 @@ let navOpen
  */
 let mobileMode
 
+// @ts-ignore
 navOpenVal.subscribe((i)=> navOpen = i)
+// @ts-ignore
 mobileModeVal.subscribe((i)=>mobileMode = i )
 
 /**

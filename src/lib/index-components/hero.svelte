@@ -1,6 +1,34 @@
+<script>
+// @ts-nocheck
+
+  import { onMount } from 'svelte'
+
+  let deviceType
+
+  onMount(() => {
+      deviceType = getDeviceType();
+  });
+
+  function getDeviceType() {
+    // @ts-ignore
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // @ts-ignore
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return 'iPhone';
+    }
+
+    if (/android/i.test(userAgent)) {
+        return 'Android';
+    }
+
+    return 'Desktop';
+  }
+
+</script>
 <div class="relative w-full h-screen" id="hero">
     
-    <video class="absolute inset-0 w-full h-full object-cover filter brightness-[0.6]" src="./mma3.webm" autoplay loop muted playsinline>
+    <video class="absolute inset-0 w-full h-full object-cover filter brightness-[0.6]" src="./mma3.{deviceType == 'iPhone' ? 'mp4' : 'webm'}" autoplay loop muted playsinline>
     </video>
     <div class="z-10 absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col" id="hero-text">
       <div class="flex justify-center min-w-[240px] w-[28%]" id="hero-logo">
