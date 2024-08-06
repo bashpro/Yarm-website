@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+/node_modules
 .vscode
 /build
 /.svelte-kit
@@ -9,3 +9,9 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+/yarm/mma3-old.mp4
+/yarm/mma3.mp4
+/yarm/mma3.webm
+/static/mma3-old.mp4
+/static/mma3.mp4
+/static/mma3.webm
