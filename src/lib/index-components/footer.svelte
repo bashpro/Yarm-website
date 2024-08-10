@@ -5,9 +5,9 @@
 
 </script>
 
-<div class="flex flex-row flex-wrap px-[15px] py-[25px]" id="footer">
+<div class="flex flex-row flex-wrap py-[25px]" id="footer">
     <div id="f-left" class="flex flex-1 min-w-[320px] text-zinc-500">
-        <div id="fl-info" class="flex flex-col flex-[1.2] select-text">
+        <div id="fl-info" class="flex flex-col flex-[1.2] select-text pl-[15px]">
             <p class=" text-xl font-[400] text-zinc-900">Contact Info:</p>
             <p><i class="fa-solid fa-location-dot"></i> Yarm Martial Arts</p>
             <p class="{flTextPadding}">10 West Street</p>

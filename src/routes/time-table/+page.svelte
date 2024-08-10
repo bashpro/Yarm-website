@@ -67,7 +67,7 @@
         <div class="flex h-[70dvh] w-[85dvw] timetable">
           
           <!-- Fixed column for class names -->
-          <div class="min-w-[100px] flex flex-col justify-center items-center">
+          <div class="min-w-[70px] flex flex-col justify-center items-center">
             {#each classes as i}
               <div class="text-lg flex-1 flex justify-center items-center w-full">
                 {i.name}
@@ -76,7 +76,7 @@
           </div>
           
           <!-- Scrollable section for days and times -->
-          <div class="flex flex-1 min-w-[100px] overflow-x-auto">
+          <div class="flex flex-1 min-w-[100px] overflow-x-scroll">
             {#each timetable as day}
               <div class="flex flex-col text-lg flex-grow min-w-[150px] mx-2 justify-center items-center w-full">
                 <div class="flex flex-col text-lg flex-1 justify-center items-center w-full text-center">

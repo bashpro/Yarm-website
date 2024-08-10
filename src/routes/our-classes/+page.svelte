@@ -287,7 +287,7 @@
                     <p class=" text-5xl max-[1000px]:text-3xl mb-6">TimeTable</p>
                     {#each timeTable as { type, schedule }}
                         {#if title == type}
-                            <div class="flex flex-col min-w-[300px] w-auto mr-1 max-w-[400px] h-[300px]">
+                            <div class="flex flex-col min-w-[250px] w-auto mr-1 max-w-[400px] h-[300px]">
                                 {#each schedule as dayAndTime}
                                     <div class="schedule-item flex items-center flex-1">
                                         <p class="day text-xl max-[1000px]:text-lg w-[100px] bg-zinc-300 p-2 bg-opacity-60 text-zinc-900 font-normal text-center">{dayAndTime.day}</p>
