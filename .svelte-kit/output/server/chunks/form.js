@@ -7,7 +7,7 @@ const Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="section h-auto" id="the-form"><div class="ml-[15px] mr-[15px]" id="form">${validate_component(FormTemplate, "FormTemplate").$$render(
     $$result,
     {
-      title: "Unclock your full potential!",
+      title: "Unlock your full potential!",
       titleTextStyle: "sm:text-5xl text-2xl",
       subTitle: "Book your first <b>free</b> introductory Session Today",
       subtitleTextStyle: "sm:text-3xl text-lg"
