@@ -3,7 +3,7 @@
     
 </script>
 
-<div class="flex h-screen overflow-hidden relative bg-no-repeat bg-cover bg-center transition-all duration-800 scale-100 filter grayscale-[0.5] bg-[url('/imgs/junior-class.JPG')] bg-img">
+<div class="flex h-auto max-[600px]:h-screen overflow-hidden relative bg-no-repeat bg-cover bg-center transition-all duration-800 scale-100 filter grayscale-[0.5] bg-[url('/imgs/junior-class.JPG')] bg-img">
 
     <div class="flex-1 p-[60px] max-[600px]:p-6 max-[600px]:pt-[50px] text-white font-thin bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0.55)] flex flex-col">
         <h1 class=" text-5xl max-[1000px]:text-3xl mb-6">Our Approach</h1>

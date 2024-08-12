@@ -67,7 +67,7 @@
         <div class="flex h-[70dvh] w-[85dvw] timetable">
           
           <!-- Fixed column for class names -->
-          <div class="min-w-[70px] flex flex-col justify-center items-center">
+          <div class="min-w-[70px] max-[600px]:flex-1 flex flex-col justify-center items-center">
             {#each classes as i}
               <div class="text-lg flex-1 flex justify-center items-center w-full">
                 {i.name}

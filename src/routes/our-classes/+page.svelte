@@ -254,8 +254,6 @@
 
 </script>
 
-
-
 <div bind:this={btn} class="min-[945px]:h-[100dvh] bg-black flex bg-imgs-{currentImg} bg-no-repeat bg-cover bg-center transition-all duration-800 scale-100 filter  grayscale-[0.5] {readyState ? "opacity-100 bg-opacity-100": "opacity-0 bg-opacity-0 bg-black"}">
    <div class="bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.55)] flex h-full w-full flex-col ">
         {#each classes as {title,src,active,subTitle,desc}}
@@ -269,7 +267,7 @@
                     
                     <div class=" overflow-auto max-h-[60svh]">
                         {#each desc.split('. ') as sentence}
-                            <p class="text-lg max-[1000px]:text-sm mb-2 tracking-wider">
+                            <p class="text-lg max-[1000px]:text-sm mb-2 tracking-wider max-[600px]:mr-2">
                                 {#if sentence.endsWith('.') || sentence.endsWith('!')}
                                     {sentence}
                                 {:else}
@@ -287,7 +285,7 @@
                     <p class=" text-5xl max-[1000px]:text-3xl mb-6">TimeTable</p>
                     {#each timeTable as { type, schedule }}
                         {#if title == type}
-                            <div class="flex flex-col min-w-[250px] w-auto mr-1 max-w-[400px] h-[300px]">
+                            <div class="flex flex-col min-w-[250px] w-auto mr-1 max-w-[350px] h-[300px]">
                                 {#each schedule as dayAndTime}
                                     <div class="schedule-item flex items-center flex-1">
                                         <p class="day text-xl max-[1000px]:text-lg w-[100px] bg-zinc-300 p-2 bg-opacity-60 text-zinc-900 font-normal text-center">{dayAndTime.day}</p>
